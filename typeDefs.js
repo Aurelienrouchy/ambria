@@ -10,6 +10,7 @@ const typeDefs = gql`
     books: [Book]
     booksAll: [Book]
     booksAlls: [Book]
+    boo: [Book]
   }
 `;
 

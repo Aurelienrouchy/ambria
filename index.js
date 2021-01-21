@@ -18,6 +18,7 @@ const resolvers = {
       books: () => books,
       booksAll: () => books,
       booksAlls: () => books,
+      boo: () => books,
     },
 };
   
