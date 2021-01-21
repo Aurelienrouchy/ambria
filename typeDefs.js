@@ -9,6 +9,7 @@ const typeDefs = gql`
   type Query {
     books: [Book]
     booksAll: [Book]
+    booksAlls: [Book]
   }
 `;
 
