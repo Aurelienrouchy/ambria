@@ -19,6 +19,7 @@ const resolvers = {
       booksAll: () => books,
       booksAllEvery: () => books,
       booksAllEveryEVERYEVERY: () => books,
+      booksAllhgfghxdcfjvgbhghEveryEVERYEVERY: () => books,
     },
 };
   
