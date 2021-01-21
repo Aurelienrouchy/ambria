@@ -17,6 +17,7 @@ const resolvers = {
     Query: {
       books: () => books,
       booksAll: () => books,
+      booksAllEverywhere: () => books,
     },
 };
   
