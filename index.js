@@ -1,6 +1,7 @@
 const { ApolloServer } = require('apollo-server');
 
 const typeDefs = require('./typeDefs.js');
+require('./database');
 
 const books = [
     {
