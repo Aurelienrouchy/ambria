@@ -11,6 +11,9 @@
   "dependencies": {
     "apollo-server": "^2.19.2",
     "graphql": "^15.4.0",
-    "mongoose": "^5.11.13"
+    "mongoose": "^5.11.13",
+    "passport": "^0.4.1",
+    "passport-google-token": "^0.1.2",
+    "passport-linkedin-oauth2": "^2.0.0"
   }
 }

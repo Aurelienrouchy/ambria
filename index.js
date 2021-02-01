@@ -1,40 +1,11 @@
 const { ApolloServer } = require('apollo-server');
+require('./src/database');
 
-const typeDefs = require('./typeDefs.js');
-require('./database');
+const typeDefs = require('./src/typeDefs.js');
+const resolvers = require('./src/resolvers.js');
 
-const books = [
-    {
-      title: 'The Awakening',
-      author: 'Kate Chopin',
-    },
-    {
-      title: 'City of Glass',
-      author: 'Paul Auster',
-    },{
-      title: 'City of Glass',
-      author: 'Paul Auster',
-    },
- ];
-
-const resolvers = {
-    Query: {
-      books: () => books,
-      booksAll: () => books,
-      booksAlls: () => books,
-      boo: () => books,
-      boobobobo: () => books,
-    },
-};
-  
-//testdfcbhbyv
-//testdfcbyv
-//testdfcbyv
-  // The ApolloServer constructor requires two parameters: your schema
-// definition and your set of resolvers.
 const server = new ApolloServer({ typeDefs, resolvers });
 
-// The `listen` method launches a web server.
 server.listen().then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
 });
